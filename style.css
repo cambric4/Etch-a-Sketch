@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    padding: 15px;
+    padding-top: 15px;
+    background-color: seagreen;
+}
+
+#container {
+display: flex;
+flex-wrap: wrap;
+flex: 0 0 600px;
+height: 600px;
+width: 80px;
+}
+
+#container div {
+    display: flex;
+    flex: 1 1 0;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    margin: 55px;
+    gap: 30px;
+}
+
+button:hover {
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color: gray;
+}
+
+button:not(.default)::-moz-focus-inner {
+        border-style: none;
+    }
+
+    button:focus {
+        outline: 1px solid #000000;
+        color: red;
+        border-radius: 5px;
+        background-color: goldenrod;
+      }
+
+.rainbowColors {
+    background-image: conic-gradient(
+        #fd004c,
+        #fe9000,
+        #fff020,
+        #3edf4b,
+        #3363ff,
+        #b102b7
+    );
+}
+
+.shading {
+    background-image: conic-gradient(
+        #cccccc,
+        #999999,
+        #666,
+        #000
+    );
+    color: white;
+}
+
+.gridbtncolor {
+    white-space: nowrap;
+}
